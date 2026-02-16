@@ -1,0 +1,17 @@
+services:
+  - type: worker
+    name: professor-x-engine
+    runtime: docker
+    region: ohio
+    plan: free # Change to starter/pro if you hit RAM limits during rendering
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: TELEGRAM_API
+        sync: false
+      - key: TELEGRAM_HASH
+        sync: false
+      - key: OWNER_ID
+        sync: false
