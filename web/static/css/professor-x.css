@@ -1,0 +1,63 @@
+/* ==========================================
+             PROFESSOR-X EDITION
+     Ultra-Speed & Stable Leech Engine
+   ========================================== */
+
+:root {
+    --prof-bg: #0b0e14;
+    --prof-card: #161b22;
+    --prof-accent: #00d4ff;
+    --prof-text: #e6edf3;
+    --prof-border: #30363d;
+}
+
+body {
+    background-color: var(--prof-bg);
+    color: var(--prof-text);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    background-color: var(--prof-card) !important;
+    border-bottom: 2px solid var(--prof-accent);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--prof-accent) !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card {
+    background-color: var(--prof-card);
+    border: 1px solid var(--prof-border);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: var(--prof-accent);
+    border: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #0099cc;
+    transform: scale(1.02);
+}
+
+.progress-bar {
+    background-color: var(--prof-accent);
+}
+
+/* Professor-X Watermark for Web */
+.web-watermark {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.2);
+    pointer-events: none;
+}
