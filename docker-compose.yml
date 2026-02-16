@@ -1,0 +1,14 @@
+# ==========================================
+#             PROFESSOR-X EDITION
+# ==========================================
+
+version: '3.9'
+services:
+  app:
+    build: .
+    container_name: professor-x-bot
+    command: bash start.sh
+    restart: always
+    network_mode: "host"
+    environment:
+      - TZ=Asia/Kolkata
